@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id = "@+id/giris"
+        android:title = "Giriş"
+        android:icon="@drawable/girissayfasi"/>
+
+    <item android:id = "@+id/yemekler"
+        android:title = "Yemekler"
+        android:icon="@drawable/yemeklersayfasi"/>
+
+    <item android:id = "@+id/sepet"
+        android:title = "Sepet"
+        android:icon="@drawable/sepetsayfasi"/>
+
+    <item android:id = "@+id/hakkimizda"
+        android:title = "Hakkımızda"
+        android:icon="@drawable/hakkimizdasayfasi"/>
+
+    <item android:id = "@+id/iletişimbilgileri"
+        android:title = "İletişim Bilgisi"
+        android:icon="@drawable/iletisimbilgisisayfasi"/>
+
+</menu>
