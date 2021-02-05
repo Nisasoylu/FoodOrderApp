@@ -38,10 +38,10 @@ public class YemekSepetActivity : AppCompatActivity() {
         sepetteki_yemekler()
 
         buttonSepetiOnayla.setOnClickListener {
-            if(!(sepetList.isEmpty())) {
+            if (!(sepetList.isEmpty())) {
                 val intent = Intent(this@YemekSepetActivity, SepetOnayActivity::class.java)
                 startActivity(intent)
-            }else{
+            } else {
                 val intentt = Intent(this@YemekSepetActivity, SepetBosActivity::class.java)
                 startActivity(intentt)
             }
@@ -53,16 +53,15 @@ public class YemekSepetActivity : AppCompatActivity() {
             val saat = cal.get(Calendar.HOUR_OF_DAY)
             val dakika = cal.get(Calendar.MINUTE)
 
-            val timep = TimePickerDialog(this@YemekSepetActivity, TimePickerDialog.OnTimeSetListener {
-                view, s, dk ->
+            val timep = TimePickerDialog(this@YemekSepetActivity, TimePickerDialog.OnTimeSetListener { view, s, dk ->
 
                 editTextSaat.setText("$s : $dk")
 
-            },saat,dakika,true)
+            }, saat, dakika, true)
 
             timep.setTitle("Saat seçiniz")
-            timep.setButton(DialogInterface.BUTTON_POSITIVE,"AYARLA",timep)
-            timep.setButton(DialogInterface.BUTTON_NEGATIVE,"İPTAL",timep)
+            timep.setButton(DialogInterface.BUTTON_POSITIVE, "AYARLA", timep)
+            timep.setButton(DialogInterface.BUTTON_NEGATIVE, "İPTAL", timep)
 
             timep.show()
 
@@ -74,16 +73,15 @@ public class YemekSepetActivity : AppCompatActivity() {
             val ay = cal.get(Calendar.MONTH)
             val gun = cal.get(Calendar.DAY_OF_MONTH)
 
-            val datep = DatePickerDialog(this@YemekSepetActivity, DatePickerDialog.OnDateSetListener {
-                view, yil, ay, gun ->
+            val datep = DatePickerDialog(this@YemekSepetActivity, DatePickerDialog.OnDateSetListener { view, yil, ay, gun ->
 
-                editTextTarih.setText("$gun/${ay+1}/$yil")
+                editTextTarih.setText("$gun/${ay + 1}/$yil")
 
-            }, yil,ay,gun)
+            }, yil, ay, gun)
             datep.getDatePicker().setMinDate(System.currentTimeMillis() - 1000);
             datep.setTitle("Saat seçiniz")
-            datep.setButton(DialogInterface.BUTTON_POSITIVE,"AYARLA",datep)
-            datep.setButton(DialogInterface.BUTTON_NEGATIVE,"İPTAL",datep)
+            datep.setButton(DialogInterface.BUTTON_POSITIVE, "AYARLA", datep)
+            datep.setButton(DialogInterface.BUTTON_NEGATIVE, "İPTAL", datep)
 
             datep.show()
         }
@@ -92,7 +90,7 @@ public class YemekSepetActivity : AppCompatActivity() {
 
     fun sepetteki_yemekler() {
         val url = "http://kasimadalan.pe.hu/yemekler/tum_sepet_yemekler.php"
-        var sepetTutar:Int = 0
+        var sepetTutar: Int = 0
         val istek = StringRequest(Request.Method.GET, url, Response.Listener { cevap ->
             //Log.e("Gelen yanıt",cevap)
 

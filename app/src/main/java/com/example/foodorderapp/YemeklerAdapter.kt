@@ -13,10 +13,10 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 
-class YemeklerAdapter(var mContext:Context, var yemeklerListe:List<Yemekler>)
-    :RecyclerView.Adapter<YemeklerAdapter.CardTasarimTutucu>(){
+class YemeklerAdapter(var mContext: Context, var yemeklerListe: List<Yemekler>)
+    : RecyclerView.Adapter<YemeklerAdapter.CardTasarimTutucu>() {
 
-    inner class CardTasarimTutucu(tasarim: View): RecyclerView.ViewHolder(tasarim){
+    inner class CardTasarimTutucu(tasarim: View) : RecyclerView.ViewHolder(tasarim) {
         var yemek_kart: CardView
         var textViewYemekAd: TextView
         var imageViewYemekResim: ImageView
@@ -27,8 +27,9 @@ class YemeklerAdapter(var mContext:Context, var yemeklerListe:List<Yemekler>)
             imageViewYemekResim = tasarim.findViewById(R.id.imageViewYemekResim)
         }
     }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardTasarimTutucu {
-        val tasarim = LayoutInflater.from(mContext).inflate(R.layout.yemek_kart_tasarim,parent,false)
+        val tasarim = LayoutInflater.from(mContext).inflate(R.layout.yemek_kart_tasarim, parent, false)
         return CardTasarimTutucu(tasarim)
     }
 

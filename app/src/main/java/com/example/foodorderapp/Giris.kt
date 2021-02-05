@@ -17,6 +17,7 @@ class Giris : AppCompatActivity() {
         }
 
     }
+
     override fun onBackPressed() {
         val intent3 = Intent(Intent.ACTION_MAIN)
         intent3.addCategory(Intent.CATEGORY_HOME)

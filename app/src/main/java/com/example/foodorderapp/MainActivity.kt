@@ -138,7 +138,7 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
 
     override fun onBackPressed() {
         val intent3 = Intent(this@MainActivity, Giris::class.java)
-            startActivity(intent3)
+        startActivity(intent3)
 
     }
 }
