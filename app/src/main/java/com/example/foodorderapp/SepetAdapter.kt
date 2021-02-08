@@ -39,6 +39,7 @@ class SepetAdapter(var mContext: Context, var SepetListe: List<Sepet>)
 
     }
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardTasarimTutucu {
         val tasarim = LayoutInflater.from(mContext).inflate(R.layout.satir_tasarim, parent, false)
 
