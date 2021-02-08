@@ -23,14 +23,105 @@
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/hijyenvelezzetliservis"
+                app:layout_constraintStart_toStartOf="@+id/sicakservis"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/ba2" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/kurye"
+                android:layout_width="135dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                app:layout_constraintStart_toEndOf="@+id/uygulama"
+                app:layout_constraintTop_toBottomOf="@+id/hijyenvelezzetliservis"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/kurye" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/hijyenvelezzetliservis"
+                android:layout_width="135dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                app:layout_constraintStart_toEndOf="@+id/sicakservis"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/hijyenvelezzetsertifikali" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/sicakservis"
+                android:layout_width="135dp"
+                android:layout_height="90dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/sicakservis" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/uygulama"
+                android:layout_width="135dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/uygulama" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="83dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="105dp"
+                android:text="Restaurant"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+            <ImageView
+                android:id="@+id/sepetegit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/sepetsayfasi" />
+
+            <ImageView
+                android:id="@+id/infoyagit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sepetegit"
+                app:srcCompat="@drawable/hakkimizdasayfasi" />
+
+            <ImageView
+                android:id="@+id/iletişimegit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/infoyagit"
+                app:srcCompat="@drawable/iletisimbilgisisayfasi" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>

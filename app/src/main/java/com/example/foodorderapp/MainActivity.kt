@@ -31,8 +31,21 @@ class MainActivity : AppCompatActivity(), SearchView.OnQueryTextListener {
 
 
         rv.setHasFixedSize(true)
-        rv.layoutManager = StaggeredGridLayoutManager(4, StaggeredGridLayoutManager.VERTICAL)
+        rv.layoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
         tumYemekler()
+
+        sepetegit.setOnClickListener {
+            val intent11 = Intent(this@MainActivity, YemekSepetActivity::class.java)
+            startActivity(intent11)
+        }
+        infoyagit.setOnClickListener {
+            val intent12 = Intent(this@MainActivity, Hakkimizda::class.java)
+            startActivity(intent12)
+        }
+        iletişimegit.setOnClickListener {
+            val intent13 = Intent(this@MainActivity, iletisimBilgileri::class.java)
+            startActivity(intent13)
+        }
 
     }
 

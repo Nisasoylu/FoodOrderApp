@@ -58,10 +58,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
         android:text="Toplam tutar:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rv2" />
+        app:layout_constraintBottom_toTopOf="@+id/textViewToplamTutar"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textViewToplamTutar"
@@ -69,12 +69,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
         android:hint="0.0 ₺"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonSepetiOnayla"
@@ -94,24 +94,24 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/rv2"
         app:srcCompat="@drawable/zamanlayici" />
 
     <EditText
         android:id="@+id/editTextSaat"
         android:layout_width="90dp"
         android:layout_height="20dp"
-        android:focusableInTouchMode="false"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="5dp"
         android:background="#FFFFFF"
         android:ems="10"
+        android:focusableInTouchMode="false"
         android:hint="Saat seçiniz"
         android:inputType="textPersonName"
-        android:textColorLink="@color/black"
+        android:textColorLink="@color/c4"
         android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@+id/textViewToplamTutar"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -120,15 +120,15 @@
         android:id="@+id/editTextTarih"
         android:layout_width="100dp"
         android:layout_height="20dp"
-        android:focusableInTouchMode="false"
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="5dp"
-        android:background="@null"
+        android:background="#FFFFFF"
         android:ems="10"
+        android:focusableInTouchMode="false"
         android:hint="Tarih seçiniz"
         android:inputType="textPersonName"
-        android:textColorLink="@color/black"
+        android:textColorLink="@color/c4"
         android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@+id/textViewToplamTutar"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -139,10 +139,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginBottom="70dp"
         android:text="Saat:"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/rv2" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/textView6"
@@ -160,8 +160,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/tarih" />
 </androidx.constraintlayout.widget.ConstraintLayout>

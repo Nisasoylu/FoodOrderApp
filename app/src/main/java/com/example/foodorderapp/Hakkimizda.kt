@@ -13,6 +13,10 @@ class Hakkimizda : AppCompatActivity() {
         toolbarHakkimizda.title = "Hakkımızda"
         setSupportActionBar(toolbarHakkimizda)
 
+        sertifika.setText("Lokantamız 40 saatlik eğitimin ardından sahada bakanlık tarafından hazırlanan genelgeye uygun bulunarak ve süreci başarıyla bitirerek ‘’Uluslararası GT Hijyen Sertifikası’’ ve ‘’Firma logolu GT Cardcert Kart’’ı almaya hak kazandı.")
+        hizli.setText("Siparişiniz lokantamızdan çıktıktan sonra en geç 30 dk içinde kapınızda.")
+        sicak.setText("Lokantamızdan çıkan siparişiniz özel çantalarımızla taşınarak, tüm sıcaklığı ile kapınıza ulaştırılır.")
+        tamsure.setText("7/24 hizmet ile ne zaman acıkırsanız kapınızda.")
 
     }
 }

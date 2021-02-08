@@ -17,9 +17,9 @@
 
             <ImageView
                 android:id="@+id/imageViewYemekResim"
-                android:layout_width="100dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="60dp"
+                android:layout_width="130dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -30,12 +30,12 @@
                 android:id="@+id/textViewYemekAd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginBottom="1dp"
                 android:text="Tramisu"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageViewYemekResim" />
+                app:layout_constraintStart_toStartOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </LinearLayout>
